@@ -9,8 +9,24 @@
     <artifactId>my-app</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-   <packaging>war</packaging>
+    <packaging>war</packaging>
 
     <name>My App</name>
+
+    <!-- Java version -->
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <!-- WAR plugin -->
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.4.0</version>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
